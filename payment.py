@@ -8,8 +8,7 @@ def calculate (a, b):
 def divide(a, b):
     return round(a/b, 2)
 
-def pull_request():
-    print('Test Pull request')
+print("Pull request")
 @app.route("/")
 def index():
 
