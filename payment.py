@@ -5,7 +5,7 @@ app = Flask(__name__)
 def calculate (a, b):
     c = a+b
     return c
-def devide(a, b):
+def divide(a, b):
     return round(a/b, 2)
 
 @app.route("/")

@@ -1,4 +1,5 @@
 from payment import calculate as cal
+from payment import calculate as divide
 
 def test_cal(a,b):
     c = cal(a,b)
@@ -9,12 +10,14 @@ def test_cal(a,b):
 
 def test_divide(a, b):
     assert b == 0
+    c = divide(a,b)
 
 
 
-test(10,20)
-test(1,15)
-test(40,150)
 
-z = divide(21,3)
-a = divide(21,0)
+test_cal(10,20)
+test_cal(1,15)
+test_cal(40,150)
+
+divide(21,3)
+divide(21,0)
